@@ -1,0 +1,19 @@
+[package]
+name = "play-rsa"
+version = "0.2.0"
+edition = "2021"
+
+
+[lib]
+name = "libplayrsa"
+
+[[bin]]
+name = "playrsa"
+path = "src/examples/main.rs"
+
+[dependencies]
+num = "0.2.1"
+rustc-serialize = "0.3.24"
+rand = "0.5"
+primal = "0.2.3"
+num-bigint = { version = "0.2.6", features = ["rand"] }
